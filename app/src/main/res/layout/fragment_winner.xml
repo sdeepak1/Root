@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tour_data_shape"
+    android:padding="2dp"
+    tools:context=".winnerFragment">
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_two" />
+
+    <LinearLayout
+        android:id="@+id/textDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:visibility="visible"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="@+id/matchTab"
+        app:layout_constraintStart_toStartOf="@+id/matchTab"
+        app:layout_constraintTop_toBottomOf="@+id/matchTab">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/rank"
+            android:textColor="#546E7A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/winning"
+            android:textAlignment="textEnd"
+            android:textColor="#546E7A"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/showWinning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/tour_data_shape"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/textDemo"
+        app:layout_constraintEnd_toEndOf="@id/textDemo"
+        app:layout_constraintStart_toStartOf="@id/textDemo"
+        app:layout_constraintTop_toBottomOf="@+id/textDemo" />
+
+</FrameLayout>

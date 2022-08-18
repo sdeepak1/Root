@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/shadeRed">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/viewParent.headerText.NoMode"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="@string/here_s_nyour_first_nstep_with_nus"
+            android:textColor="@color/whiteTextColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_login_hero" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/tour_show_bg"
+            android:backgroundTint="@color/white"
+            android:elevation="20dp"
+            app:cardCornerRadius="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/getProfile"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_account_circle_24"
+                    android:backgroundTint="#989696"
+                    android:onClick="addImage"
+                    tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tap_to_select_profile_image"
+                    android:textColor="@color/shadowColor"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputName"
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:hint="@string/name"
+                    android:textColorHint="@color/shadowColor">
+
+                    <EditText
+                        android:id="@+id/getName"
+                        style="@style/modifiedEditText"
+                        android:drawableStart="@drawable/person"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/drawHint"
+                        android:importantForAutofill="no"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:textColor="@color/shadowColor"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmail"
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:hint="@string/email"
+                    android:textColorHint="@color/shadowColor">
+
+                    <EditText
+                        android:id="@+id/getEmail"
+                        style="@style/modifiedEditText"
+                        android:drawableStart="@drawable/email"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/drawHint"
+                        android:importantForAutofill="no"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/shadowColor"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputMobile"
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:hint="@string/mobile"
+                    android:textColorHint="@color/shadowColor">
+
+                    <EditText
+                        android:id="@+id/getMobile"
+                        style="@style/modifiedEditText"
+                        android:drawableStart="@drawable/phone"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/drawHint"
+                        android:importantForAutofill="no"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:textColor="@color/shadowColor"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputPassword"
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:hint="@string/password"
+                    android:textColorHint="@color/shadowColor"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/shadeRed">
+
+                    <EditText
+                        android:id="@+id/getPassword"
+                        style="@style/modifiedEditText"
+                        android:drawableStart="@drawable/password"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/drawHint"
+                        android:importantForAutofill="no"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/shadowColor"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/use_8_or_more_characters_with_a_mix_of_letters_numbers_symbols"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputDOB"
+                    style="@style/parent"
+                    android:layout_marginTop="@dimen/loginViewsMargin"
+                    android:hint="@string/dob"
+                    android:textColorHint="@color/shadowColor">
+
+                    <EditText
+                        android:id="@+id/getDOB"
+                        style="@style/modifiedEditText"
+                        android:drawableStart="@drawable/dob"
+                        android:drawablePadding="5dp"
+                        android:drawableTint="@color/drawHint"
+                        android:importantForAutofill="no"
+                        android:inputType="date"
+                        android:maxLines="1"
+                        android:textColor="@color/shadowColor"
+                        tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edit_text_color_change"
+                        android:buttonTint="@color/shadeRed"
+                        android:padding="5dp"
+                        android:text="@string/male"
+                        android:textColor="@color/shadowColor"
+                        android:textSize="16sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_color_change"
+                        android:buttonTint="@color/shadeRed"
+                        android:padding="5dp"
+                        android:text="@string/female"
+                        android:textColor="@color/shadowColor"
+                        android:textSize="14sp"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/ragister_btn"
+        style="@style/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edit_text_color_change"
+        android:elevation="20dp"
+        android:onClick="Ragister"
+        android:text="@string/ragister"
+        android:textAllCaps="false"
+        android:textColor="@color/shadeRed"
+        android:textSize="20sp"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/moveToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <TextView
+        android:id="@+id/moveToLogin"
+        style="@style/parent"
+        android:layout_marginBottom="20dp"
+        android:text="@string/already_have_an_account_click_here"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/ragister_btn"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i_read_and_agree_to_terms_condition"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="30dp"
+    android:background="@drawable/unvisible">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/enough_Dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tour_show_bg"
+        android:elevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/total_entry_fee"
+            android:textColor="@color/hint_text"
+            app:layout_constraintBottom_toBottomOf="@+id/CloseEnoughMoneyDialog"
+            app:layout_constraintEnd_toStartOf="@+id/CloseEnoughMoneyDialog"
+            app:layout_constraintStart_toEndOf="@+id/circleImageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/dialogEntryFee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:padding="5dp"
+
+            android:textColor="@color/shadowColor"
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/rs"
+            app:drawableTint="@color/drawHint"
+            app:layout_constraintEnd_toStartOf="@+id/textView17"
+            app:layout_constraintStart_toEndOf="@+id/textView10"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/logo"
+            android:backgroundTint="@color/shadeRed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/CloseEnoughMoneyDialog"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/close"
+            android:backgroundTint="#616161"
+            android:padding="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:text="@string/your_balance"
+            android:textColor="@color/shadowColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/circleImageView3" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="5dp"
+            android:text="@string/used_amount"
+            android:textColor="@color/shadowColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CloseEnoughMoneyDialog" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:elevation="20dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="start|center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/amount_added_unutilised"
+                        android:textColor="@color/drawHint"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/EnoughAddedBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:textColor="@color/shadowColor"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/usesEnoughAddedAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="25dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center|center_vertical|end"
+                        android:textColor="@color/shadowColor"
+                        app:drawableEndCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/drawHint" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="start|center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/winnings"
+                        android:textColor="@color/drawHint"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/EnoughWinningBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:textColor="@color/shadowColor"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/usesEnoughWinningAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="25dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center|center_vertical|end"
+                        android:textColor="@color/shadowColor"
+                        app:drawableEndCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/drawHint" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="start|center_horizontal|center_vertical"
+                        android:padding="5dp"
+                        android:text="@string/cash_bonus"
+                        android:textColor="@color/drawHint"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                    <TextView
+                        android:id="@+id/EnoughCashBonusBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="start"
+                        android:padding="5dp"
+                        android:textColor="@color/shadowColor"
+                        android:textSize="12sp"
+                        app:drawableStartCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical">
+
+
+                    <TextView
+
+                        android:id="@+id/usesEnoughCashBonusAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="25dp"
+                        android:drawablePadding="5dp"
+                        android:gravity="center|center_vertical|end"
+                        android:textColor="@color/shadowColor"
+                        app:drawableEndCompat="@drawable/rs"
+                        app:drawableTint="@color/drawHint" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/drawHint" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_color_change"
+                android:drawableStart="@drawable/note"
+                android:drawablePadding="5dp"
+                android:drawableTint="@color/green"
+                android:gravity="start"
+                android:padding="5dp"
+                android:text="@string/maximum_usable_cash_bonus_per_match_25_of_entry_fees"
+                android:textAllCaps="false"
+                android:textColor="@color/drawHint"
+                android:textSize="12sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/setText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="5dp"
+            android:padding="5dp"
+            android:textColor="@color/shadeRed"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/privacy"
+            app:drawableTint="@color/shadeRed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".withdraw">
+    <include
+        android:id="@+id/waller_toolbar"
+        layout="@layout/waller_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.tabs.TabLayout
+
+        android:id="@+id/paymentMethod"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:background="#FFFFFF"
+        android:elevation="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waller_toolbar"
+        app:tabIconTint="@color/selector_tab"
+        app:tabIndicatorColor="@color/shadeRed"
+        app:tabSelectedTextColor="@color/shadeRed"
+        app:tabTextAppearance="@style/MyTabTextSize"
+        app:tabTextColor="@color/black"
+
+
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:drawablePadding="5dp"
+        android:padding="5dp"
+        android:textColor="@color/green"
+        android:textSize="16sp"
+        app:drawableStartCompat="@drawable/rs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="3dp"
+        android:text="@string/withdraw_amount"
+        android:textColor="@color/shadowColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentMethod" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/whiteTextColor"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputAccount"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/account_holder_name"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getAccountName"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/person"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/bank_name"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getBankName"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/bank"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputMobile"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/ifsc_code"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getIFSC"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/dob"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="date|text"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/account_number"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getAC"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/number"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputDOB"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/mobile"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getMObile"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                style="@style/loginButton"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:background="@drawable/login_button_bg"
+                android:onClick="setBank"
+                android:text="@string/withdraw"
+                android:textAllCaps="false"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/upi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/whiteTextColor"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/inputupi"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/enter_upi_id"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getUPI"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/upi"
+                    android:drawablePadding="5dp"
+                    android:importantForAutofill="no"
+                    android:inputType="date|textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                style="@style/loginButton"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:background="@drawable/login_button_bg"
+                android:onClick="setUpi"
+                android:text="@string/withdraw"
+                android:textAllCaps="false"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/get_wallet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:elevation="20dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/whiteTextColor"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/enter_wallet_app_paytm_googlepay"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getWalletAPP"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/ic_baseline_account_balance_wallet_24"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:hint="@string/mobile"
+                android:textColorHint="@color/shadowColor">
+
+                <EditText
+                    android:id="@+id/getphone"
+                    style="@style/modifiedEditText"
+                    android:drawableStart="@drawable/phone"
+                    android:drawablePadding="5dp"
+                    android:drawableTint="@color/drawHint"
+                    android:importantForAutofill="no"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:textColor="@color/shadowColor"
+                    tools:ignore="LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                style="@style/loginButton"
+                android:layout_width="200dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:background="@drawable/login_button_bg"
+                android:onClick="setWallet"
+                android:text="@string/withdraw"
+                android:textAllCaps="false"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/please_enter_all_details_carefully_if_you_mistake_in_enter_deatils_the_amount_cannot_be_refund"
+        android:textColor="@color/shadowColor"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_Ads"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

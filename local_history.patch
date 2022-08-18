@@ -1,0 +1,19 @@
+Index: app/src/main/res/layout/activity_ragister.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_ragister.xml b/app/src/main/res/layout/activity_ragister.xml
+--- a/app/src/main/res/layout/activity_ragister.xml	(date 1640004449087)
++++ b/app/src/main/res/layout/activity_ragister.xml	(date 1640004449087)
+@@ -46,8 +46,8 @@
+             <androidx.viewpager2.widget.ViewPager2
+                 android:id="@+id/view_pager"
+                 android:layout_width="match_parent"
+-                android:layout_height="wrap_content"
+-                android:isScrollContainer="false"
++                android:layout_height="match_parent"
++                android:isScrollContainer="true"
+                 android:persistentDrawingCache="scrolling"
+                 tools:ignore="SpeakableTextPresentCheck" />
+ 

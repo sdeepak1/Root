@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".myprofile">
+    <include
+        android:id="@+id/other_toolbar"
+        layout="@layout/other_activity_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/whiteTextColor"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/Profile_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_color_change"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/drawHint"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColor="@color/shadowColor"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/Profile_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_color_change"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/drawHint"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textEmailAddress"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColor="@color/shadowColor"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/Profile_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_color_change"
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/drawHint"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColor="@color/shadowColor"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <EditText
+                android:id="@+id/Profile_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/edit_text_color_change"
+                android:drawableStart="@drawable/dob"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/drawHint"
+                android:enabled="false"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColor="@color/shadowColor"
+                android:textSize="20sp"
+                tools:ignore="LabelFor,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <RadioGroup
+                android:id="@+id/get_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                   android:enabled="false"
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_text_color_change"
+                    android:buttonTint="@color/shadeRed"
+                    android:padding="5dp"
+                    android:text="@string/male"
+                    android:textColor="@color/shadowColor"
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                   android:enabled="false"
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_color_change"
+                    android:buttonTint="@color/shadeRed"
+                    android:padding="5dp"
+                    android:text="@string/female"
+                    android:textColor="@color/shadowColor"
+                    android:textSize="14sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/emal_id_connor_be_edit_or_change"
+                android:textColor="@color/drawHint"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/updateProfile"
+        style="@style/loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_button_bg"
+        android:elevation="20dp"
+        android:onClick="update"
+        android:text="@string/update_profile"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/editProfile"
+        style="@style/loginButton"
+        android:layout_width="200dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/login_button_bg"
+        android:elevation="20dp"
+        android:onClick="edit"
+        android:text="@string/edit_profile"
+        android:textAllCaps="false"
+        android:visibility="visible"
+        app:initialCornerAngle="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/adView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:background="@drawable/rag_red_bg"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/other_toolbar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Profile_Image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ic_baseline_account_circle_24"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="false"
+            android:focusable="false"
+            android:onClick="addImage"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/other_toolbar"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="@string/tap_to_select_profile_image"
+            android:textColor="#FFFDE7"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/getProfile"
+            tools:ignore="TextContrastCheck" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_Ads"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

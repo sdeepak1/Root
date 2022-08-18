@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">Root</string>
+    <string name="demo">Time</string>
+    <string name="navigation_open">Open Navigation drawer</string>
+    <string name="navigation_close">Close Navigation drawer</string>
+    <string name="create_or_update_the_tournment">Create Or Update the Tournament</string>
+    <string name="enter_tournament_name">Enter Tournament Name</string>
+    <string name="enter_tournament_date">Enter Tournament Date</string>
+    <string name="enter_tournament_time">Enter Tournament Time</string>
+    <string name="enter_tournament_winner_amount">Enter Tournament Winner Amount</string>
+    <string name="enter_tournament_entry_fee">Enter Tournament Entry Fee</string>
+    <string name="enter_tournament_match_type">Tournament Match Type(Classic)</string>
+    <string name="enter_tournament_match_mode">Tournament Match Mode(SOLO)</string>
+    <string name="enter_tournament_match_map">Tournament Match Map</string>
+    <string name="enter_tournament_person_limit">Tournament Person Limit</string>
+    <string name="create_tournament">Create Or Update Tournament</string>
+    <string name="already_nhave_an_naccount">Already \nHave an \nAccount?</string>
+
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="match_details">Match Details</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+
+    <string name="entry">Entry</string>
+    <string name="match_type">Match Type</string>
+    <string name="map">Map</string>
+    <string name="game_mode">Game Mode</string>
+
+    <string name="update_data">Update Data</string>
+    <string name="before_join_please_read_game_rule_carefully">Before join please read game rule carefully*</string>
+    <string name="demo_user">Demo User</string>
+
+    <string name="enter_message_here">Enter Message Here</string>
+    <string name="upload">Upload</string>
+    <string name="currently_we_have_no_notification">Currently we have No Notification</string>
+    <string name="currently_we_have_no_tournament_yet">Currently We have No tournament Yet</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_user_id">Enter User Id</string>
+    <string name="my_recent_transcation">My Recent Transaction</string>
+    <string name="user_details">User Details</string>
+    <string name="name">Name</string>
+    <string name="userid">UserId</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="dob">DOB</string>
+    <string name="gender">Gender</string>
+
+    <string name="transcation_history_empty">Transaction History Empty</string>
+    <string name="all_join_user_details">All Join User Details</string>
+    <string name="enter_user_rank">Enter User Rank</string>
+    <string name="set_winner">Set Winner</string>
+    <string name="please_enter_details_carefully">Please Enter Details Carefully</string>
+
+    <string name="winner_amount">Winner Amount</string>
+    <string name="tap_to_for_more_details">Tap to for More Details</string>
+
+    <string name="complete">Complete</string>
+    <string name="winner_list">Match Winners</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user_register_here"><font color="#B6B4B4"> New user?</font> <font color="020000"> <b>Register Here</b></font></string>
+    <string name="use_other_methods">Use other Methods</string>
+    <string name="enter_your_email_id">Enter your Email Id</string>
+    <string name="please_enter_your_email_address_carefully">Please enter your Email Id Carefully*</string>
+    <string name="send_link">Send Link</string>
+
+    <string name="join">Join</string>
+    <string name="rules">Rules</string>
+    <string name="room_id_and_password">Room Id And Password</string>
+    <string name="enter_your_game_id">Enter Your Game Id</string>
+    <string name="pay">Pay</string>
+    <string name="please_enter_your_game_id_carefully">Please enter your game id carefully</string>
+    <string name="female">female</string>
+    <string name="update_profile">Update_Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="tap_to_select_profile_image">Tap to select Profile Image</string>
+    <string name="male">Male</string>
+    <string name="currently_we_have_no_history">Your transacton history is empty</string>
+    <string name="here_s_nyour_first_nstep_with_nus">Here’s\nyour first\nstep with \nus!</string>
+    <string name="ragister">Ragister</string>
+    <string name="already_have_an_account_click_here">Already have an account? <font color="#000000">Click Here</font></string>
+    <string name="my_matches">My Matches</string>
+    <string name="root">ROOT</string>
+    <string name="total_balance">Total Balance</string>
+    <string name="add_money">Add Money</string>
+    <string name="withdraw_money">withdraw Money</string>
+    <string name="your_all_payment_are_secure_by_razorpay_mininum_withdraw_100">Your All Payment are secure by Razorpay Mininum Withdraw 100</string>
+    <string name="tournament_winners">Tournament Winners</string>
+    <string name="withdraw_amount">Withdraw Amount</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="ifsc_code">IFSC Code</string>
+    <string name="account_number">Account Number</string>
+    <string name="mobile">Mobile</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="enter_upi_id">Enter UPI ID</string>
+    <string name="enter_wallet_app_paytm_googlepay">Enter Wallet App (Paytm,GooglePay)</string>
+    <string name="please_enter_all_details_carefully_if_you_mistake_in_enter_deatils_the_amount_cannot_be_refund">Please Enter All details Carefully If you Mistake In Enter Deatils The amount Cannot be Refund</string>
+    <string name="please_wait">Please Wait..</string>
+    <string name="transcation_id">Transcation Id:</string>
+    <string name="transcation_date">Transcation Date:</string>
+    <string name="transcation_time">Transcation Time:</string>
+    <string name="room_id">Room Id</string>
+    <string name="password">Password</string>
+    <string name="done">Done</string>
+    <string name="best_of_luck_for_the_contest_from_root">Best Of Luck For The Contest From Team Root</string>
+    <string name="okay">Okay</string>
+    <string name="update_available">Update Available</string>
+    <string name="root_recommends_that_you_update_to_the_latest_version_you_cant_use_this_app_until_downloading_the_latest_version">Root recommends that you update to the latest version. You can not use This app Until downloading the latest version</string>
+    <string name="close_app">Close App</string>
+    <string name="update_now">Update Now</string>
+    <string name="my_balance">My Balance</string>
+    <string name="share_on_whatsapp">Share On Whatsapp</string>
+    <string name="more_option">MORE OPTION</string>
+    <string name="how_it_works">HOW IT WORKS</string>
+    <string name="add_cash">ADD CASH</string>
+    <string name="amount_added_unutilised">AMOUNT ADDED (UNUTILISED)</string>
+    <string name="winnings">WINNINGS</string>
+    <string name="withdraw_instantly">WITHDRAW INSTANTLY</string>
+    <string name="cash_bonus">CASH BONUS</string>
+    <string name="maximum_usable_cash_bonus_per_match_25_of_entry_fees_tap_to_for_more_details">Maximum usable Cash Bonus per match=25% of Entry Fees.<b>Know more</b></string>
+    <string name="refer_and_earn">Refer And Earn</string>
+    <string name="invite_a_friend_and_collect_up_to_500rs_cash_bonus">Invite a friend and collect up to 500Rs cash bonus</string>
+    <string name="have_a_question_about_your_balance_so_contact_us">Have a question about your balance so contact us</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="minimum_add_amount_is_10_and_maximum_1000">Minimum Add Amount Is 10 and maximum 1000</string>
+    <string name="amount_to_add">Amount to Add</string>
+    <string name="min_100rs_and_max_10000">min 100Rs And Max 10000</string>
+    <string name="maximum_usable_cash_bonus_per_match_25_of_entry_fees">Maximum usable Cash Bonus per match=25% of Entry Fees.</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="how_use_money">How Use Money</string>
+    <string name="close">Close</string>
+    <string name="enter_your_referral_code_here">Enter your referral code here</string>
+    <string name="next">Next</string>
+    <string name="enter_refrel_code_and_get_10rs_extra_cash_bonus">Enter refrel code and get 10Rs extra cash bonus</string>
+    <string name="invite_via_freind">Invite via Friend?</string>
+    <string name="skip">Skip</string>
+    <string name="you_have_not_any_refrel_code">You have not any refrel code</string>
+    <string name="used_amount">Used Amount</string>
+    <string name="total_entry_fee">Total Entry Fee</string>
+    <string name="try_again">Try Again</string>
+    <string name="please_check_your_internet_connection_and_than_try_again">Please check your internet connection and than Try Again</string>
+    <string name="no_internet">No Internet</string>
+    <string name="success">Success</string>
+    <string name="share_this_code_with_your_freind">Share this code with your friend</string>
+    <string name="logout">Logout</string>
+    <string name="share_app">Share App</string>
+    <string name="line">______________________________</string>
+    <string name="report_feedback">Report/Feedback</string>
+    <string name="contact_us">Contact Us</string>bui
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="community_guidelines">Community Guidelines</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="collect_500">Collect 500</string>
+    <string name="my_profile">My Profile</string>
+    <string name="emal_id_connor_be_edit_or_change">Emal Id connor be edit or change</string>
+    <string name="refund_policy">Refund policy</string>
+    <string name="i_read_and_agree_to_terms_condition"><![CDATA[I Read and agree to Terms & Condition]]></string>
+    <string name="rank">Rank</string>
+    <string name="winning">Winning</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="use_8_or_more_characters_with_a_mix_of_letters_numbers_symbols"><![CDATA[Use 8 or more characters with a mix of Capital letters,letters, numbers & symbols ]]></string>
+    <string name="tap_to_copy">Tap to copy</string>
+    <string name="todo">TODO</string>
+    <string name="view_all"><![CDATA[VIEW ALL >]]></string>
+    <string name="my_joined_upcoming_tournament">My Joined Upcoming Tournament</string>
+    <string name="you_play_this_contest"> * you play this contest</string>
+    <string name="you_not_play_this_contest"> *  you not play this contest</string>
+
+    <string name="banner_Ads">"ca-app-pub-3940256099942544/6300978111"</string>
+
+</resources>

@@ -1,0 +1,156 @@
+Index: app/src/main/res/layout/activity_tournament.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_tournament.xml b/app/src/main/res/layout/activity_tournament.xml
+--- a/app/src/main/res/layout/activity_tournament.xml	(date 1640182150138)
++++ b/app/src/main/res/layout/activity_tournament.xml	(date 1640182150138)
+@@ -10,6 +10,7 @@
+     <include
+         android:id="@+id/include"
+         layout="@layout/toolbar"
++        android:layout_width="0dp"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+Index: app/src/main/res/layout/activity_live_complete_screen.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_live_complete_screen.xml b/app/src/main/res/layout/activity_live_complete_screen.xml
+--- a/app/src/main/res/layout/activity_live_complete_screen.xml	(date 1640182633642)
++++ b/app/src/main/res/layout/activity_live_complete_screen.xml	(date 1640182633642)
+@@ -1,5 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
++<project android:version="4"
++    xmlns:android="http://schemas.android.com/apk/res/android">
+   <component name="DesignSurface">
+     <option name="filePathToZoomLevelMap">
+       <map>
+@@ -14,48 +15,4 @@
+         <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/ic_baseline_account_balance_wallet_24.xml" value="0.2101851851851852" />
+         <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/login_button_bg.xml" value="0.13778501628664494" />
+         <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/login_edittest_bg.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/login_shading_bg.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/money.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/phone.xml" value="0.2101851851851852" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/selector_tab.xml" value="0.13914473684210527" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/sheemer_text_bg.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/tab_bgmi_icon.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/tour_data_shape.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/tour_show_bg.xml" value="0.19583333333333333" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/withdraw_bg.xml" value="0.75" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_live_complete_screen.xml" value="0.14" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_login.xml" value="0.16" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_main.xml" value="0.16" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_match_details.xml" value="0.15" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_matches_details.xml" value="0.12894736842105264" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_notification.xml" value="0.1" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_ragister.xml" value="0.12" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_signup.xml" value="0.1" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_splash.xml" value="0.12894736842105264" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_tournament.xml" value="0.1" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_wallet_screen.xml" value="0.25" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/activity_winner_screen.xml" value="0.1" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/loading_dialog.xml" value="0.33" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/login_tab_fragment.xml" value="0.25" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/other_activity_toolbar.xml" value="0.22" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/ragister_slide_item.xml" value="0.22" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/shimmer_layout.xml" value="0.25" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/signin_tab_fragment.xml" value="0.21" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/toolbar.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/tournament_image_slider_layout.xml" value="0.20416666666666666" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/tournament_showimg_data.xml" value="0.25" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/waller_toolbar.xml" value="0.25" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/layout/winner_show_data.xml" value="0.2" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.13778501628664494" />
+-        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/xml/imageproviderpath.xml" value="0.1" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/build/classes" />
+-  </component>
+-  <component name="ProjectType">
+-    <option name="id" value="Android" />
+-  </component>
+-</project>
+\ No newline at end of file
++        <entry key="..\:/Users/deepak sharma/AndroidStudioProjects/Root/app/src/main/res/drawable/lo
+\ No newline at end of file
+Index: app/src/main/java/com/example/root/login.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/root/login.java b/app/src/main/java/com/example/root/login.java
+--- a/app/src/main/java/com/example/root/login.java	(date 1640171433627)
++++ b/app/src/main/java/com/example/root/login.java	(date 1640171433627)
+@@ -72,7 +72,7 @@
+ 
+         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(task -> {
+             if(task.isSuccessful()) {
+-                StyleableToast.makeText(login.this, "login Succesfull",R.style.styleGreenToast);
++                StyleableToast.makeText(login.this, "login Succesfull",R.style.styleGreenToast).show();
+                 loading_dialog.endLoading();
+                 Intent intent = new Intent(login.this, tournament.class);
+                 startActivity(intent);
+@@ -82,12 +82,12 @@
+         }).addOnFailureListener(e -> {
+             loading_dialog.endLoading();
+             if(e instanceof FirebaseAuthInvalidCredentialsException){
+-                StyleableToast.makeText(login.this,"Password Is Wrong ",R.style.styleGreenToast);
++                StyleableToast.makeText(login.this,"Password Is Wrong ",R.style.styleRedToast).show();
+             }else if(e instanceof FirebaseAuthInvalidUserException){
+-                StyleableToast.makeText(login.this,"Invalid Email",R.style.styleGreenToast);
++                StyleableToast.makeText(login.this,"Invalid Email",R.style.styleRedToast).show();
+ 
+             }else{
+-                StyleableToast.makeText(login.this,"Something Went Wrong",R.style.styleRedToast);
++                StyleableToast.makeText(login.this,"Something Went Wrong",R.style.styleRedToast).show();
+ 
+             }
+         });
+@@ -111,7 +111,7 @@
+ 
+         loading_dialog.startLoading();
+         firebaseAuth.sendPasswordResetEmail(user_email.getText().toString()).addOnCompleteListener(task -> {
+-            StyleableToast.makeText(login.this,"Successfully Check Your Gmail",R.style.styleGreenToast);
++            StyleableToast.makeText(login.this,"link send Successfully Check Your Gmail",R.style.styleGreenToast).show();
+             close_forget_dialog(view);
+             loading_dialog.endLoading();
+ 
+@@ -119,10 +119,10 @@
+             close_forget_dialog(view);
+             loading_dialog.endLoading();
+             if(e instanceof FirebaseAuthInvalidCredentialsException){
+-                StyleableToast.makeText(login.this,"This Email Not Exits in our database",R.style.styleRedToast);
++                StyleableToast.makeText(login.this,"This Email Not Exits in our database",R.style.styleRedToast).show();
+ 
+             }else{
+-                StyleableToast.makeText(login.this,"Something went wrong",R.style.styleRedToast);
++                StyleableToast.makeText(login.this,"Something went wrong",R.style.styleRedToast).show();
+ 
+             }
+         });
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	(date 1640182633720)
++++ b/app/build.gradle	(date 1640182633720)
+@@ -54,7 +54,7 @@
+ 
+     implementation 'br.com.simplepass:loading-button-android:1.14.0'
+     implementation "androidx.cardview:cardview:1.0.0"
+-    implementation 'com.google.android.material:material:1.0.0'
++    implementation 'com.google.android.material:material:1.4.0'
+ 
+ 
+ 

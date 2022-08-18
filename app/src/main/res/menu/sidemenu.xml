@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+        <item
+            android:id="@+id/myProfile"
+            android:icon="@drawable/person"
+            android:title="@string/my_profile"
+            />
+
+        <item
+
+            android:id="@+id/menuWallet"
+            android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+            android:title="@string/wallet"/>
+
+
+    <item
+
+        android:id="@+id/menuInvite"
+        android:icon="@drawable/note"
+        android:title="@string/collect_500"/>
+
+
+    <item
+    android:title="@string/line"/>
+
+
+
+    <item
+        android:id="@+id/refund"
+        android:icon="@drawable/refund"
+        android:title="@string/refund_policy" />
+
+
+    <item
+                    android:id="@+id/privacy"
+                    android:icon="@drawable/privacy"
+                    android:title="@string/privacy_policy" />
+
+    <item
+                    android:id="@+id/community"
+                    android:icon="?android:attr/actionModeFindDrawable"
+                    android:title="@string/community_guidelines" />
+
+    <item android:id="@+id/term"
+        android:icon="@drawable/terms"
+        android:title="@string/terms_and_conditions"/>
+    <item
+                    android:id="@+id/contact"
+                    android:icon="@android:drawable/stat_sys_headset"
+                    android:title="@string/contact_us" />
+    <item
+                    android:id="@+id/report"
+                    android:icon="@drawable/bug"
+                    android:title="@string/report_feedback" />
+
+    <item
+        android:title="@string/line"/>
+
+
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/share_app" />
+
+
+
+    <item
+                android:id="@+id/logout"
+                android:icon="@drawable/password"
+                android:title="@string/logout" />
+
+
+
+
+
+</menu>
